@@ -6,8 +6,8 @@ CORS(app)
 
 @app.route('/foosball', methods=['GET','POST'])
 def foosball():
-		if request.method == 'GET':
-				return jsonify({'status':'ok'})
+    if request.method == 'GET':
+        return jsonify({'status':'ok'})
 
 if __name__ == '__main__':
-		app.run()
+    app.run(a)
