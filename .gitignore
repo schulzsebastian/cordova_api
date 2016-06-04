@@ -1,5 +1,2 @@
 *.pyc
 foosballenv/
-index.html
-wsgi.py
-*.ini
