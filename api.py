@@ -17,6 +17,13 @@ def getplayers():
             result['data'].append(row)
         return jsonify(result)
 
+@app.route('/addplayer', methods=['POST'])
+def addplayer():
+    if request.method == 'POST':
+        payload = request.get_json(force=True)
+        p = Player.create(**payload)
+        return jsonify(payload)
+
 @app.route('/addpoints', methods=['POST'])
 def addpoints():
     if request.method == 'POST':
