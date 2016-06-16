@@ -9,6 +9,7 @@ class Player(Model):
     id = PrimaryKeyField()
     name = CharField()
     points = IntegerField(null = False)
+    games = IntegerField(null = False)
 
     class Meta:
         database = db

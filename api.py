@@ -36,6 +36,7 @@ def addpoints():
         except:
             abort(404)
         rs.points += val
+        rs.games += 1
         rs.save()
         return jsonify({'update':'pid:%d, points:%d' % (pid, points)})
 
